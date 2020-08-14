@@ -11,23 +11,23 @@
 
  ***/
 
-@import url('plugins/fontawesome-all.css');
-@import url('plugins/color.css');
-@import url('plugins/color-2.css');
-@import url('plugins/animate.css');
-@import url('plugins/custom-animate.css');
-@import url('plugins/flaticon.css');
-@import url('plugins/owl.css');
-@import url('plugins/jquery-ui.css');
-@import url('plugins/jquery.fancybox.min.css');
-@import url('plugins/scrollbar.css');
-@import url('plugins/hover.css');
-@import url('plugins/jquery.touchspin.css');
-@import url('plugins/botstrap-select.min.css');
-@import url('plugins/swiper.min.css');
-@import url('plugins/rtl.css');
-@import url('plugins/animate.css');
-@import url('plugins/responsive.css');
+@import "plugins/fontawesome-all.css";
+@import "plugins/color.css";
+@import "plugins/color-2.css";
+@import "plugins/animate.css";
+@import "plugins/custom-animate.css";
+@import "plugins/flaticon.css";
+@import "plugins/owl.css";
+@import "plugins/jquery-ui.css";
+@import "plugins/jquery.fancybox.min.css";
+@import "plugins/scrollbar.css";
+@import "plugins/hover.css";
+@import "plugins/jquery.touchspin.css";
+@import "plugins/botstrap-select.min.css";
+@import "plugins/swiper.min.css";
+@import "plugins/rtl.css";
+@import "plugins/animate.css";
+@import "plugins/responsive.css";
 
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -286,6 +286,8 @@ img {
 .owl-dots {
     display: none;
 }
+
+/* Icônes */
 
 /* Btn style */
 
@@ -2955,6 +2957,11 @@ img {
     text-align: center;
 }
 
+.projects-section-two .minify-font {
+  font-size : 1rem;
+  font-weight: 400;
+}
+
 .project-block-one .top-content {
     position: relative;
     transition: .5s;
@@ -4459,6 +4466,12 @@ img {
     border-bottom: 1px solid #eee;
 }
 
+.contact-section .qui-sommes-nous {
+    position: relative;
+    padding: 75px 0 100px;
+    border-bottom: 1px solid #eee;
+}
+
 .contact-section h2 {
   font-size: 2.3rem !important;
   font-weight: 500 !important;
@@ -4468,6 +4481,16 @@ img {
 .contact-section .encart-contact {
   background-color: #0f123b;
   color: white;
+}
+
+.contact-section .sec-bg-qui-sommes-nous {
+    background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597393432/resource/bg-contact-qui-sommes-nous_copie_yhf3mf.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 826px;
+    height: 600px;
+    background-size: cover;
 }
 
 .contact-section .sec-bg {
@@ -5782,6 +5805,8 @@ img {
 
 .about-us-section-five {
     position: relative;
+    color: #0f123b;
+    margin-top: 8rem;
 }
 
 .about-us-section-five .auto-container {
@@ -5801,10 +5826,19 @@ img {
     margin-bottom: 30px;
 }
 
+.about-us-section-five .subtitle-proximité {
+  font-size: 2.2rem;
+}
+
+.about-us-section-five .text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 .about-us-section-five .content h4 {
     position: relative;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
@@ -5837,7 +5871,7 @@ img {
 .about-us-section-five blockquote {
     position: relative;
     text-align: center;
-    background: #2d2d34;
+    background: #0f123b;
     color: #fff;
     font-size: 36px;
     font-weight: 300;
@@ -5845,9 +5879,11 @@ img {
     line-height: 40px;
     max-width: 760px;
     margin: 0 auto;
-    margin-top: -49px;
+    margin-top: 20px;
+    margin-bottom: 80px;
     letter-spacing: -2px;
     border-bottom: 6px solid;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .about-us-section-five blockquote span {
@@ -6364,6 +6400,18 @@ img {
     padding: 60px 0 20px;
     margin: 0 20px;
     background-size: cover;
+    background-color: #deb05a;
+    margin-bottom: 80px;
+}
+
+.about-section-six .valeurajoutee-subtitle {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.about-section-six .text {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .about-section-six:before {
@@ -6390,7 +6438,7 @@ img {
 
 .about-section-six .tab-btn-style-one a.nav-link {
     position: relative;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     border: 0;
     color: rgba(255, 255, 255, 0.5);
@@ -6427,6 +6475,7 @@ img {
     font-weight: 500;
     color: #fff;
     margin-bottom: 5px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .about-section-six .tab-content ul li i {
@@ -6457,8 +6506,24 @@ img {
 /* Projects Section Two */
 
 .projects-section-two {
-    position: relative;
-    padding: 145px 0 250px;
+  position: relative;
+  padding: 145px 0 250px;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+.projects-section-two .sec-bg {
+  background-color: #0f123b;
+}
+
+.projects-section-two .subtitle-text {
+  color: #deb05a;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.25rem;
+}
+
+.projects-section-two .partenaire-locatif {
+  font-size: 2.2rem;
 }
 
 .projects-section-two .big-title {
@@ -6478,6 +6543,13 @@ img {
     position: relative;
     box-shadow: 0px 5px 18.9px 2.1px rgba(0, 0, 0, 0.05);
     margin: 0 20px 20px;
+    color: #0f123b;
+}
+
+.project-block-two .text {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
 .projects-section-two .theme_carousel {
@@ -6492,7 +6564,7 @@ img {
     bottom: 0;
     background-color: #fff;
     width: 45%;
-    padding: 20px;
+    padding: 60px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -6527,6 +6599,7 @@ img {
     position: relative;
     max-width: 1045px;
     margin: 0 auto;
+    color: #0f123b;
 }
 
 .projects-section-two .project-tab .tabs-header{
@@ -6681,6 +6754,16 @@ img {
     background-position: center;
     overflow: hidden;
     text-align: center;
+    background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597252197/about-slider_p1r6es.png);
+    color: white;
+}
+
+.page-title, .mentions-legales {
+  background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597394152/background/bg-banner-mentions-legales_vnfhdb.png);
+}
+
+.page-title .text {
+  font-size: 1.5rem;
 }
 
 
@@ -7973,15 +8056,15 @@ img {
 
 .projects-section-two.style-two .project-tab .project-tab-btns .p-tab-btn:hover,
 .projects-section-two.style-two .project-tab .project-tab-btns .p-tab-btn.active-btn {
-    color: #222;
+    color: #fff;
 }
 
 .projects-section-two.style-two .owl-theme .owl-nav .owl-prev:before {
-    color: #222;
+    color: #fff;
 }
 
 .projects-section-two.style-two .owl-theme .owl-nav .owl-next:before {
-    color: #222;
+    color: #fff;
 }
 
 /* Services Details */
@@ -8137,6 +8220,18 @@ img {
 
 .widget_client_review .designation {
     font-size: 14px;
+}
+
+/* Mentions légales */
+
+.mentions-legales-text {
+  position: relative;
+  margin-top: 5rem;
+  font-size: 1rem;
+}
+
+.mentions-legales-text .text {
+
 }
 
 /* Contact Form Widget */

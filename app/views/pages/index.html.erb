@@ -1,80 +1,9 @@
 <div class="page-wrapper">
     <!-- Preloader -->
-    <div class="loader-wrap">
-        <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
-        <div class="layer layer-one"><span class="overlay"></span></div>
-        <div class="layer layer-two"><span class="overlay"></span></div>
-        <div class="layer layer-three"><span class="overlay"></span></div>
-    </div>
+    <%= render 'shared/preloader' %>
 
     <!-- Main Header -->
-    <header class="main-header header-style-one">
-
-        <!-- Header Upper -->
-        <div class="header-upper">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <!--Logo-->
-                    <div class="logo-box">
-                        <div class="logo"><a href="index.html"><%= cl_image_tag("logo_ypi6qn") %></a></div>
-                    </div>
-                    <!--Nav Box-->
-                    <div class="nav-outer clearfix">
-                        <!--Mobile Navigation Toggler-->
-                        <div class="mobile-nav-toggler"><%= cl_image_tag("icon-bar_p4dxpv") %></div>
-
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-md navbar-light">
-                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                <ul class="navigation clearfix">
-                                    <li><a href="index.html">Accueil</a></li>
-                                    <li><a href="about.html">Qui sommes-nous</a></li>
-                                    <li><a href="#">Contactez-nous</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <!-- Main Menu End-->
-
-                    </div>
-                    <div class="navbar-right-info">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--End Header Upper-->
-
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo float-left">
-                  <a href="index.html" title=""><%= cl_image_tag("logo-long_h2umtb") %></a>
-                </div>
-                <!--Right Col-->
-                <div class="float-right">
-                    <!-- Main Menu -->
-                    <nav class="main-menu clearfix">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </nav><!-- Main Menu End-->
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
-
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-remove"></span></div>
-
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><%= cl_image_tag("logo_ypi6qn") %></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-        <!-- End Mobile Menu -->
-
-        <div class="nav-overlay">
-            <div class="cursor"></div>
-            <div class="cursor-follower"></div>
-        </div>
-    </header>
+    <%= render 'shared/main-header' %>
     <!-- End Main Header -->
 
     <!-- Bnner Section -->
@@ -188,7 +117,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="image-block wow fadeInRight">
-                        <div class="image"><%= cl_image_tag("image-43_pdg16s") %></div>
+                        <div class="image"><%= cl_image_tag("resource/image-43_pdg16s") %></div>
                     </div>
                 </div>
             </div>
@@ -285,7 +214,7 @@
                   <div class="row justify-content-center">
                     <div class="service-block-one">
                         <div class="inner-box wow fadeInUp">
-                            <div class="image"><%= cl_image_tag("completez-pack_gthnic") %></div>
+                            <div class="image"><%= cl_image_tag("resource/completez-pack_gthnic") %></div>
                             <div class="content">
                                 <h4>Complétez votre pack...</h4>
                                 <div class="link-btn"><div class="text">Petits et gros électroménager <br>Ménage complet <br>Linge de maison <br>Mobilier extérieur (Balcon/terrasse) <br>Réalisation de photos</div></div>
@@ -294,7 +223,7 @@
                     </div>
                     <div class="service-block-one">
                         <div class="inner-box wow fadeInUp">
-                            <div class="image"><%= cl_image_tag("allegez-pack_g7hchw") %></div>
+                            <div class="image"><%= cl_image_tag("resource/allegez-pack_g7hchw") %></div>
                             <div class="content">
                                 <h4>Allégez votre pack...</h4>
                                 <div class="link-btn"><div class="text">Vous souhaitez rester autonome ? <br>Bénéficiez de nos packs sans <br>la prestation de montage. <br>Nous vous livrons chez vous ! <br><br></div></div>
@@ -328,64 +257,10 @@
     </section>
 
     <!-- Main Footer -->
-    <footer class="main-footer">
-        <div class="auto-container">
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="row clearfix">
-
-                    <!--Column-->
-                    <div class="column col-lg-6">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="widget about-widget">
-                                    <h3 class="widget-title">L'Agenceur Lyonnais</h3>
-                                    <div class="text">Découvrez votre agence de proximité pour meubler tous vos biens clé en main. Quelque soit votre bien, nous aurons toujours une offre pour vous satisfaire.</div>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="footer-widget links-widget pl-lg-5">
-                                    <h3 class="widget-title">À propos</h3>
-                                    <div class="widget-content">
-                                        <ul>
-                                            <li><a href="#">Accueil</a></li>
-                                            <li><a href="#">À propos de nous</a></li>
-                                            <li><a href="#">CGV</a></li>
-                                            <li><a href="#">Mentions légales</a></li>
-                                            <li><a href="#">Nous contacter</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Column-->
-                    <div class="column col-lg-6">
-                        <div class="footer-widget contact-widget pl-lg-5">
-                            <h3 class="widget-title">Nous contacter</h3>
-                            <div class="widget-content">
-                                <div class="text">Prenez contact avec nous pour réaliser un devis. <br>Nous aurons toujours une offre qui saura répondre à vos besoins.</div>
-                                <ul>
-                                  <li>Email : <br><a href="tel:+1(234)5018607">contact@lagenceur-lyonnais.fr</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- Footer Bottom -->
-        <div class="auto-container">
-            <div class="footer-bottom">
-                <div class="copyright">Copyright 2020, SAS l'Agenceur -, 9 rue Jules Chaussé - 69630 CHAPONOST SAS au Capital de 10 000€ Site internet : www.lagenceur-lyonnais.fr, créé par Mathilde Robert</div>
-            </div>
-        </div>
-    </footer>
+    <%= render 'shared/footer' %>
 
 </div>
 <!--End pagewrapper-->
 
 <!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-right-arrow"></span></div>
+<%= render 'shared/scroll-to-top' %>
