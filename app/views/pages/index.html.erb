@@ -18,7 +18,7 @@
                                 <div class="text">Investisseurs et particuliers, simplifiez-vous la vie !</div>
                                 <h1>Découvrez nos offres d'ameublement qui s'incluent dans votre prêt immobilier</h1>
                                 <div class="link-box">
-                                    <a href="services.html" class="theme-btn btn-style-two light"><span>EN SAVOIR PLUS</span></a>
+                                    <a href="#en-savoir-plus" data-turbolinks="false" data-wow-duration="1500ms" class="theme-btn btn-style-two light"><span>EN SAVOIR PLUS</span></a>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
 
 
     <!-- Process Section -->
-    <section class="working-process-section bg-1">
+    <section class="working-process-section bg-1" id="en-savoir-plus">
         <h1 class="big-title">L'Agenceur</h1>
         <div class="auto-container">
             <div class="sec-title text-center light">
@@ -44,7 +44,7 @@
               <div class="row">
                   <div class="process-block col-lg-4">
                       <div class="inner-box wow fadeInLeft" data-wow-duration="1500ms">
-                          <div class="icon"><span class="flaticon-school-material"></span></div>
+                          <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_36_sljdoe") %></div>
                           <div class="content">
                               <div class="count">1<span>.</span></div>
                               <h4>Faites une demande<br /> de devis</h4>
@@ -54,17 +54,17 @@
                   </div>
                   <div class="process-block col-lg-4">
                       <div class="inner-box">
-                          <div class="icon"><span class="flaticon-paint-palette"></span></div>
+                          <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_38_k7cwpi") %></div>
                           <div class="content">
                               <div class="count">2<span>.</span></div>
                               <h4>Nous validons votre<br /> devis</h4>
                           </div>
-                          <div class="count-text">Dès réception du paiement (par carte <br />bancaire, virement où chèque), nous <br />passons votre commande en production.</div>
+                          <div class="count-text">Dès réception du paiement (par virement ou chèque), nous <br />passons votre commande en production.</div>
                       </div>
                   </div>
                   <div class="process-block col-lg-4">
                       <div class="inner-box wow fadeInRight" data-wow-duration="1500ms">
-                          <div class="icon"><span class="flaticon-like"></span></div>
+                          <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_58_csq9wy") %></div>
                           <div class="content">
                               <div class="count">3<span>.</span></div>
                               <h4>Nous planifions une<br /> date d'intervention</h4>
@@ -76,7 +76,7 @@
               <div class="row justify-content-center">
                   <div class="col-lg-5 process-block">
                       <div class="inner-box wow fadeInLeft" data-wow-duration="1500ms">
-                          <div class="icon"><span class="flaticon-school-material"></span></div>
+                          <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_40_habsjv") %></div>
                           <div class="content">
                               <div class="count">4<span>.</span></div>
                               <h4>Nous récupérons<br /> vos clés</h4>
@@ -86,7 +86,7 @@
                   </div>
                   <div class="col-lg-5 process-block">
                       <div class="inner-box">
-                          <div class="icon"><span class="flaticon-paint-palette"></span></div>
+                          <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_52_n4mnvn") %></div>
                           <div class="content">
                               <div class="count">5<span>.</span></div>
                               <h4>Nous nous chargeons<br /> de tout !</h4>
@@ -112,7 +112,7 @@
                         <div class="text">Bénéficiez d’un pack meuble clé en main comprenant tout le<br /> nécessaire obligatoire pour vous permettre d’être éligible à<br />la location meublée.</div>
                         <div class="text">Incluez le pack meuble dans votre crédit immobilier grâce à<br /> nos devis et factures qui interviennent en tant que prestation<br />d’aménagement d’intérieur.
                         <br />Conservez ainsi votre cashflow !</div>
-                        <div class="link-btn"><a href="about.html" class="theme-btn btn-style-two"><span>En savoir plus sur l'Agenceur Lyonnais</span></a></div>
+                        <div class="link-btn"><a href="/qui-sommes-nous" data-turbolinks="false" class="theme-btn btn-style-two"><span>En savoir plus sur l'Agenceur Lyonnais</span></a></div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -139,7 +139,7 @@
                 <div class="col-lg-3 pricing-block">
                     <div class="inner-box">
                         <div class="wrapper-box">
-                            <div class="icon"><span class="flaticon-colors"></span></div>
+                            <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_52_n4mnvn") %></div>
                             <div class="category">Pack standard</div>
                             <div class="price-box">
                                 <div class="price"><span style="font-size: 0.8rem">À partir de</span> <strong>2 600€</strong></div>
@@ -154,7 +154,7 @@
                 <div class="col-lg-3 pricing-block">
                     <div class="inner-box">
                         <div class="wrapper-box">
-                            <div class="icon"><span class="flaticon-illumination"></span></div>
+                            <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_46_rzijka") %></div>
                             <div class="category">Pack confort</div>
                             <div class="price-box">
                                 <div class="price"><span style="font-size: 0.8rem">À partir de</span> <strong>3 600€</strong></div>
@@ -169,7 +169,7 @@
                 <div class="col-lg-3 pricing-block">
                     <div class="inner-box">
                         <div class="wrapper-box">
-                            <div class="icon"><span class="flaticon-bathtub-1"></span></div>
+                            <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_48_zilpkv") %></div>
                             <div class="category">Pack étudiant</div>
                             <div class="price-box">
                                 <div class="price">Selon devis</div>
@@ -184,7 +184,7 @@
                 <div class="col-lg-3 pricing-block">
                     <div class="inner-box">
                         <div class="wrapper-box">
-                            <div class="icon"><span class="flaticon-bathtub-1"></span></div>
+                            <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_50_cpg7xs") %></div>
                             <div class="category">Pack sur mesure</div>
                             <div class="price-box">
                                 <div class="price">Selon devis</div>
@@ -206,8 +206,8 @@
             <div class="row align-items-center justify-content-center">
                 <div class="left-column col-xl-3">
                     <div class="sec-title style-two">
-                        <h2>Options de packs</h2>
-                        <div class="text mb-40">Flusterd impressive man farcrud open <br>inside punitively around after wasteful <br>telling coldly spokel squid hesitantly <br> gibbered some tyrans. </div>
+                        <h2>Nos options</h2>
+                        <div class="text mb-40">Parce que chaque projet est unique, vous pouvez adapter l'ensemble de nos packs selon vos attentes. </div>
                     </div>
                 </div>
                 <div class="right-column col-xl-7">
@@ -247,7 +247,7 @@
                           <span class="sec-title-dec-two"></span>
                           <h2>Quelque soit votre bien, <br>nous aurons toujours une <br>offre pour vous simplifier <br>la vie </h2>
                           <div class="link-box">
-                            <a href="services.html" class="theme-btn btn-style-two light"><span>CONTACTEZ-NOUS POUR ÉTABLIR UN DEVIS</span></a>
+                            <a href="/contacts/new" data-turbolinks="false" class="theme-btn btn-style-two light"><span>CONTACTEZ-NOUS POUR ÉTABLIR UN DEVIS</span></a>
                           </div>
                         </div>
                   </div>

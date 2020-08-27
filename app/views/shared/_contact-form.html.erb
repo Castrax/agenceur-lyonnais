@@ -1,0 +1,35 @@
+<%= simple_form_for @contact, :html => { class: "contact-form" } do |f| %>
+  <div class="row">
+
+    <div class="col-md-12 form-group">
+      <%= f.input :status, label: 'Vous êtes', as: :radio_buttons, collection: ['Professionnel', 'Particulier'], error: 'Veuillez sélectionner votre statut' %>
+    </div>
+
+    <div class="col-md-12 form-group">
+      <%= f.input :first_name, label: 'Prénom', error: 'Veuillez entrer votre prénom' %>
+    </div>
+
+    <div class="col-md-12 form-group">
+      <br>
+      <%= f.input :last_name, label: 'Nom', error: 'Veuillez entrer votre nom' %>
+    </div>
+
+    <div class="col-md-12 form-group">
+      <br>
+      <%= f.input :email, label: 'Email', error: 'Veuillez entrer votre email' %>
+    </div>
+
+    <div class="col-md-12 form-group">
+      <br>
+      <%= f.input :message, label: 'Message', error: 'Veuillez renseigner votre message' %>
+    </div>
+
+    <div class="col-md-12 form-group d-none">
+      <%= f.input :nickname, label: 'Nickname', hint: 'Veuillez laisser ce champ blanc' %>
+    </div>
+
+    <div class="col-md-12 form-group-two">
+      <%= f.submit 'Envoyer le message', class: 'theme-btn btn-style-one' %>
+    </div>
+  </div>
+<% end %>

@@ -3257,7 +3257,7 @@ img {
     position: relative;
     width: 100px;
     height: 100px;
-    line-height: 98px;
+    line-height: 90px;
     font-size: 50px;
     color: #0f123b;
     text-align: center;
@@ -4403,12 +4403,18 @@ img {
     position: relative;
 }
 
-.contact-form .form-group {
+.contact-form .form-group,
+.new_contact .form-group {
     position: relative;
     margin-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .contact-form .bootstrap-select>.dropdown-toggle,
+.new_contact .form-group input[type="text"],
+.new_contact .form-group input[type="email"],
+.new_contact .form-group textarea,
+.new_contact .form-group select,
 .contact-form .form-group input[type="text"],
 .contact-form .form-group input[type="email"],
 .contact-form .form-group textarea,
@@ -6736,11 +6742,18 @@ img {
     background-position: center;
     overflow: hidden;
     text-align: center;
-    background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597252197/about-slider_p1r6es.png);
     color: white;
 }
 
 .page-title, .mentions-legales {
+  background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597394152/background/bg-banner-mentions-legales_vnfhdb.png);
+}
+
+.page-title, .qui-sommes-nous {
+  background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597252197/about-slider_p1r6es.png);
+}
+
+.page-title, .contact {
   background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597394152/background/bg-banner-mentions-legales_vnfhdb.png);
 }
 
