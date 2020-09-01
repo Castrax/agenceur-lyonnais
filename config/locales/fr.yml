@@ -220,9 +220,9 @@ fr:
     pm: pm
   mail_form:
     models:
-      contact_form: "Le formulaire de contact de votre site"
+      contact: "Le formulaire de contact de votre site"
     attributes:
-      contact_form:
+      contact:
         email: "E-mail"
         telephone: "Numéro de téléphone"
         message: "Message envoyé"

@@ -38,7 +38,10 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import 'bootstrap'
+import 'bootstrap';
+import Swal from 'sweetalert2';
+import 'sweetalert2/src/sweetalert2.scss'
+window.Swal = Swal;
 require("custom/script")
 require("custom/form-fields")
 // require("custom/owl.carousel.min")

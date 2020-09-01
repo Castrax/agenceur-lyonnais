@@ -8350,9 +8350,21 @@ input[type=checkbox]:checked + label:before{
     }
 }
 
+/* Alerts */
 
+.alert-info-agenceur {
+  color: #FFF !important;
+  background-color: #e6af47 !important;
+  border-color: none !important;
+  font-family: 'Work Sans';
+}
 
-
+.alert-warning-agenceur {
+  color: #FFF !important;
+  background-color: #e6af47 !important;
+  border-color: none !important;
+  font-family: 'Work Sans';
+}
 
 
 
