@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
     @contact.request = request
     if @contact.deliver
       flash.now[:error] = nil
-      redirect to root_path, notice: "Merci pour votre prise de contact"
+      redirect_to root_path, notice: "Merci pour votre prise de contact"
     else
       flash.now[:notice] = "Impossible d'envoyer le message"
       render :new
