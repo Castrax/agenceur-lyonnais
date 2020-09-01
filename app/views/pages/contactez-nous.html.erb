@@ -7,7 +7,7 @@
     <!-- End Main Header -->
 
     <!-- Page Title -->
-    <section class="page-title contact">
+    <section class="page-title" style="background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597394152/background/bg-banner-mentions-legales_vnfhdb.png);">
         <div class="auto-container">
             <div class="content-box">
                 <div class="content-wrapper">
@@ -61,32 +61,14 @@
                                 <h2>Vous avez un projet d'investissement immobilier ?</h2>
                                 <div class="text">Envoyez votre demande en remplissant le formulaire de contact ci-dessous, et notre équipe vous répondra dans les 24 heures (jours ouvrés).</div>
                             </div>
-
-                            <%= render template: 'contacts/new' %>
-
-                            <form method="post" action="sendemail.php" class="contact-form">
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input type="text" name="name" placeholder="Name" required="">
-                                    </div>
-
-                                    <div class="col-md-12 form-group">
-                                        <input type="email" name="email" placeholder="Email Address" required="">
-                                    </div>
-
-                                    <div class="col-md-12 form-group">
-                                        <input type="text" name="subject" placeholder="Subject" required="">
-                                    </div>
-
-                                    <div class="col-md-12 form-group">
-                                        <textarea name="message" placeholder="Message"></textarea>
-                                    </div>
-
-                                    <div class="col-md-12 form-group-two">
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span>SEND MESSAGE</span></button>
-                                    </div>
-                                </div>
-                            </form>
+                            <div class="forms-linked">
+                              <div class="link-box">
+                                  <a href="#en-savoir-plus" data-turbolinks="false" data-wow-duration="1500ms" class="theme-btn btn-style-one light"><span>Faire une demande de contact</span></a>
+                              </div>
+                              <div class="link-box">
+                                  <a href="#en-savoir-plus" data-turbolinks="false" data-wow-duration="1500ms" class="theme-btn btn-style-two light"><span>Faire une demande de devis</span></a>
+                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>

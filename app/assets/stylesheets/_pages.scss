@@ -4375,6 +4375,7 @@ img {
 
 .contact-form .bootstrap-select>.dropdown-toggle,
 .contact-form .form-group input[type="text"],
+.contact-form .form-group input[type="tel"],
 .contact-form .form-group input[type="email"],
 .contact-form .form-group textarea,
 .contact-form .form-group select {
@@ -4413,10 +4414,12 @@ img {
 .contact-form .bootstrap-select>.dropdown-toggle,
 .new_contact .form-group input[type="text"],
 .new_contact .form-group input[type="email"],
+.new_contact .form-group input[type="tel"],
 .new_contact .form-group textarea,
 .new_contact .form-group select,
 .contact-form .form-group input[type="text"],
 .contact-form .form-group input[type="email"],
+.contact-form .form-group input[type="tel"],
 .contact-form .form-group textarea,
 .contact-form .form-group select {
     position: relative;
@@ -4445,6 +4448,57 @@ img {
 .contact-form .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 100%;
 }
+
+.form-check-inline .form-check-input {
+  margin-right: 0 !important;
+}
+
+input[type=radio],
+input[type=checkbox]{
+  /* hide original inputs */
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+}
+input[type=radio] + label,
+input[type=checkbox] + label{
+  cursor:pointer;
+}
+input[type=radio] + label:before,
+input[type=checkbox] + label:before{
+  height: 16px;
+  margin-right: 1rem;
+  content: " ";
+  display:inline-block;
+  vertical-align: baseline;
+  transition: 0.3s;
+  // border:1px solid #ccc;
+  background-color: #fcf9f2;
+  border-radius:10px;
+  // box-shadow: inset 0 -3px 6px #e4e4e4;
+  transition: 0.3s;
+}
+
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+/* DEFAULT */
+input[type=radio] + label:before{
+  border-radius: 0%;
+  width:16px;
+}
+input[type=checkbox] + label:before{
+  border-radius: 0%;
+  width:16px;
+}
+/* CHECKED */
+input[type=radio]:checked + label:before{
+  // box-shadow: inset 0 -1px 3px #e4e4e4, inset 0 0 1px #222, inset 0 0 0 3px gold;
+  // box-shadow: inset 0 -1px 3px #e4e4e4, inset 0 0 1px #222, inset 0 0 0 3px #deb05a;
+  background-color: #deb05a;
+}
+input[type=checkbox]:checked + label:before{
+  background-color: #deb05a;
+}
+
 
 /* Contact Section */
 
@@ -4492,7 +4546,7 @@ img {
 }
 
 .contact-section .text {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .contact-section .wrapper-box {
@@ -4510,6 +4564,18 @@ img {
     margin-top: 25px;
 }
 
+.contact-subtext {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0px 0px 60px;
+}
+
+.contact_message, .text {
+  font-size: 16px;
+  font-weight: 400;
+}
 // .contact-section .theme-btn {
 //     background-color: #3b3b44;
 // }
@@ -6745,14 +6811,6 @@ img {
     color: white;
 }
 
-.page-title, .mentions-legales {
-  background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597394152/background/bg-banner-mentions-legales_vnfhdb.png);
-}
-
-.page-title, .qui-sommes-nous {
-  background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597252197/about-slider_p1r6es.png);
-}
-
 .page-title, .contact {
   background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597394152/background/bg-banner-mentions-legales_vnfhdb.png);
 }
@@ -6908,7 +6966,6 @@ img {
 /* Pricing Section Two */
 
 .pricing-section.style-two {
-    padding-top: 270px;
 }
 
 /* Error Page */
@@ -7043,7 +7100,7 @@ img {
 .contact-section .contact-info-three .content .text {
     margin-bottom: 0;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .contact-section .contact-info-three .content .text a {

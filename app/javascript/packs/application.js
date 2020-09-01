@@ -8,9 +8,6 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-$(function () {
-  console.log('Hello World from Webpacker');
-});
 
 // require("custom/scrollbar")
 // require("custom/appear")
@@ -43,5 +40,6 @@ $(function () {
 
 import 'bootstrap'
 require("custom/script")
+require("custom/form-fields")
 // require("custom/owl.carousel.min")
 // require("custom/respond")
