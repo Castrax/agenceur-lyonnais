@@ -24,7 +24,7 @@ class Contact < MailForm::Base
     {
       :subject => "#{demand} : #{status}",
       :to => "m.robert@skema.edu",
-      :from => %("#{first_name} - #{last_name}" <#{email}>)
+      :from => %("L'Agenceur Lyonnais" <m.robert@skema.edu>)
     }
   end
 end
