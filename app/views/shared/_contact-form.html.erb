@@ -48,7 +48,12 @@
 
     <div class="col-md-12 form-group">
       <br>
-      <%= f.input :email, label: 'Email', error: 'Veuillez entrer votre email' %>
+      <%= f.input :telephone, label: 'Téléphone pro', as: :tel, error: 'Veuillez entrer un numéro de téléphone professionnel' %>
+    </div>
+
+    <div class="col-md-12 form-group">
+      <br>
+      <%= f.input :email, label: 'Email', error: 'Veuillez entrer votre email', placeholder: 'Promis, on ne vous spammera pas...' %>
     </div>
 
     <div class="col-md-12 form-group">
@@ -75,7 +80,7 @@
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :pack, label: "Votre attente en terme d'offre", as: :radio_buttons, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], item_wrapper_class: 'form-check form-check-inline' %>
+        <%= f.input :pack, label: "Votre attente en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], item_wrapper_class: 'form-check form-check-inline' %>
       </div>
 
       <div class="col-md-12 form-group">
@@ -85,7 +90,7 @@
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :number_properties, label: 'Nombre de biens à aménager', as: :select, collection: 1..3 %>
+        <%= f.input :number_properties, label: 'Nombre de biens à aménager', as: :integer, placeholder: 'Ex : 2' %>
       </div>
 
       <div class="col-md-12 form-group">

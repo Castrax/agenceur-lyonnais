@@ -4375,6 +4375,7 @@ img {
 
 .contact-form .bootstrap-select>.dropdown-toggle,
 .contact-form .form-group input[type="text"],
+.contact-form .form-group input[type="number"],
 .contact-form .form-group input[type="tel"],
 .contact-form .form-group input[type="email"],
 .contact-form .form-group textarea,
@@ -4414,11 +4415,13 @@ img {
 .contact-form .bootstrap-select>.dropdown-toggle,
 .new_contact .form-group input[type="text"],
 .new_contact .form-group input[type="email"],
+.new_contact .form-group input[type="number"],
 .new_contact .form-group input[type="tel"],
 .new_contact .form-group textarea,
 .new_contact .form-group select,
 .contact-form .form-group input[type="text"],
 .contact-form .form-group input[type="email"],
+.contact-form .form-group input[type="number"],
 .contact-form .form-group input[type="tel"],
 .contact-form .form-group textarea,
 .contact-form .form-group select {
@@ -4526,7 +4529,7 @@ input[type=checkbox]:checked + label:before{
 }
 
 .contact-section .sec-bg-qui-sommes-nous {
-    background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597393432/resource/bg-contact-qui-sommes-nous_copie_yhf3mf.png);
+    background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1599056217/realisations/image_qsn_bas_page_copie_bp7mep.jpg);
     position: absolute;
     top: 0;
     left: 0;

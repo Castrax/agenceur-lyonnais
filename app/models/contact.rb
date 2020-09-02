@@ -9,6 +9,7 @@ class Contact < MailForm::Base
   attribute :zip_code, :validate => true
   attribute :city, :validate => true
   attribute :telephone
+  attribute :telephone_pro, :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :tax_number
   attribute :siren_number
@@ -23,7 +24,7 @@ class Contact < MailForm::Base
   def headers
     {
       :subject => "#{demand} : #{status} - #{first_name} #{last_name}",
-      :to => "lagenceurlyonnais@gmail.com",
+      :to => "contact@lagenceur-lyonnais.fr",
       :from => %("L'Agenceur Lyonnais" <m.robert@skema.edu>)
     }
   end
