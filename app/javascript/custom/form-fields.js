@@ -4,13 +4,16 @@ $(document).ready(function() {
           $('.form-group.contact_name_society').parent().addClass('form-group--inactive');
           $('.form-group.contact_tax_number').parent().addClass('form-group--inactive');
           $('.form-group.contact_siren_number').parent().addClass('form-group--inactive');
+          $('.form-group.contact_telephone_pro').parent().addClass('form-group--inactive');
           $('.form-group.contact_civility').parent().removeClass('form-group--inactive');
       }
       else if (this.value == 'Professionnel') {
           $('.form-group.contact_name_society').parent().removeClass('form-group--inactive');
           $('.form-group.contact_tax_number').parent().removeClass('form-group--inactive');
           $('.form-group.contact_siren_number').parent().removeClass('form-group--inactive');
+          $('.form-group.contact_telephone_pro').parent().removeClass('form-group--inactive');
           $('.form-group.contact_civility').parent().addClass('form-group--inactive');
+          $('.form-group.contact_telephone').parent().addClass('form-group--inactive');
       }
   });
 });
