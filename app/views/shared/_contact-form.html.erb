@@ -5,7 +5,7 @@
     </div>
 
     <div class="col-md-12 form-group">
-      <%= f.input :demand, label: 'Vous souhaitez faire', as: :radio_buttons, collection: ["Une demande d'information", 'Une demande de devis'], error: 'Veuillez sélectionner votre type de demande', item_wrapper_class: 'form-check form-check-inline' %>
+      <%= f.input :demand, label: 'Vous souhaitez', as: :radio_buttons, collection: ["Une demande d'information", 'Une demande de devis'], error: 'Veuillez sélectionner votre type de demande', item_wrapper_class: 'form-check form-check-inline' %>
     </div>
 
     <div class="col-md-12 form-group">
@@ -75,17 +75,17 @@
       <%= f.input :nickname, label: 'Nickname', hint: 'Veuillez laisser ce champ blanc' %>
     </div>
     <div class="devis-informations">
-      <h4 class="mt-4">Informations complémentaires demande de devis</h4>
-      <p class="text">Pour que nous puissions qualifier votre demande de devis, veuillez renseigner les informations ci-dessous.</p>
+      <h4 class="mt-4">Informations complémentaires</h4>
+      <p class="text">Pour permettre à notre équipe d'affiner votre demande, veuillez renseigner les informations ci-dessous.</p>
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :pack, label: "Votre attente en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], item_wrapper_class: 'form-check form-check-inline' %>
+        <%= f.input :pack, label: "Vos attentes en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], item_wrapper_class: 'form-check form-check-inline'  %>
       </div>
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :options, label: 'Vos options', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], item_wrapper_class: 'form-check form-check-inline' %>
+        <%= f.input :options, label: 'Options complémentaires', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], item_wrapper_class: 'form-check form-check-inline' %>
       </div>
 
       <div class="col-md-12 form-group">

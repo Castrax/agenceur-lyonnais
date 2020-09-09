@@ -41,8 +41,11 @@ require("channels")
 import 'bootstrap';
 import Swal from 'sweetalert2';
 import 'sweetalert2/src/sweetalert2.scss'
+import { iconRadiobuttons } from '../custom/icon-radiobuttons';
 window.Swal = Swal;
 require("custom/script")
 require("custom/form-fields")
+
+iconRadiobuttons();
 // require("custom/owl.carousel.min")
 // require("custom/respond")

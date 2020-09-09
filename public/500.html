@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
+  <title>La page recherchée n'existe pas (500)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
   .rails-default-error-page {
@@ -56,11 +56,28 @@
 
 <body class="rails-default-error-page">
   <!-- This file lives in public/500.html -->
-  <div class="dialog">
-    <div>
-      <h1>We're sorry, but something went wrong.</h1>
-    </div>
-    <p>If you are the application owner check the logs for more information.</p>
+  <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="loader-wrap">
+          <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
+          <div class="layer layer-one"><span class="overlay"></span></div>
+          <div class="layer layer-two"><span class="overlay"></span></div>
+          <div class="layer layer-three"><span class="overlay"></span></div>
+      </div>
+
+      <!-- Error Page -->
+      <div class="error-page" style="background-image: url(assets/images/background/bg-24.jpg);">
+          <div class="auto-container">
+              <div class="content-box">
+                  <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></div>
+                  <h1>Erreur 500</h1>
+                  <h2>Page Introuvable.</h2>
+                  <div class="text">La page que vous cherchez n'existe pas ou a été supprimée.</div>
+                  <div class="link-btn"><a href="/" class="theme-btn btn-style-two"><span>Retourner à l'accueil</span></a></div>
+              </div>
+          </div>
+      </div>
+
   </div>
 </body>
 </html>
