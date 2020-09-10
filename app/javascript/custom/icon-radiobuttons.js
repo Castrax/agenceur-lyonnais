@@ -15,6 +15,7 @@ const iconRadiobuttons = () => {
     const packStandard = "<strong>Pack standard :</strong><br>Ensemble du mobilier nécessaire à la location meublée, dans un style moderne qui conviendra au plus grand nombre.";
     const packConfort = "<strong>Pack confort :</strong><br>Ensemble du mobilier nécessaire à la location meublée, dans un style moderne ainsi que tous les éléments de décoration qui sublimeront votre bien.";
     const packMesure = "<strong>Pack sur-mesure :</strong><br>Mise en relation avec notre décorateur(trice) d&#39;intérieur pour une prestation sur-mesure.";
+    const realPhotos = "<strong>Réalisation de photos:</strong><br>Photos réalisées par notre photographe professionnel spécialisé dans l&#39;immobilier, pour donner à vos biens plus de visibilité sur les plateformes.";
     const value = radioButton.firstChild.value;
     let title = "";
     if (value === "Pack standard"){
@@ -36,7 +37,7 @@ const iconRadiobuttons = () => {
     } else if (value === "Ménage complet") {
       title = menageComplet
     } else if (value === "Réalisation de photos") {
-      title = menageComplet
+      title = realPhotos
     } else {
       title = livraisonSeule
     };

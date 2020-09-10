@@ -2908,6 +2908,20 @@ img {
     padding: 0 5px;
 }
 
+.image-real {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 45%;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-block-one .inner-box {
     position: relative;
     margin-bottom: 20px;
