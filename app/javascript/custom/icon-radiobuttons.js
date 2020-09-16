@@ -5,8 +5,8 @@ const iconRadiobuttons = () => {
 
   const radioButtons = document.querySelectorAll('.devis-informations .form-check.form-check-inline');
   radioButtons.forEach((radioButton) => {
-    const petitElectro = "<strong>Petit électroménager :</strong><br><ul><li>Machine à café</li><li>Bouilloire</li><li>Grille-pain</li><li>Micro-ondes</li><li>Aspirateur</li><li>Pèse-personne</li><li>Fer à repasser</li><li>Table à repasser</li></ul>";
-    const grosElectro = "<strong>Gros électroménager :</strong><br><ul><li>Réfrigérateur - congélateur</li><li>Plaque induction</li><li>Hotte aspirante</li><li>Lave-vaisselle</li><li>Four</li><li>Lave-linge</li></ul>";
+    const petitElectro = "<strong>Petit électroménager :</strong><br><ul><li>Machine à café</li><li>Bouilloire</li><li>Grille-pain</li><li>Aspirateur</li><li>Pèse-personne</li><li>Fer à repasser</li><li>Table à repasser</li></ul>";
+    const grosElectro = "<strong>Gros électroménager :</strong><br><ul><li>Hotte aspirante</li><li>Lave-vaisselle</li><li>Four</li><li>Lave-linge</li></ul>";
     const lingeMaison = "<strong>Linge de maison :</strong><br><ul><li>Drap housse</li><li>Taies d&#39;oreillers</li><li>Housse de couette</li><li>Tapis de bain</li><li>Petite serviette 70x140</li><li>Grande serviette 100x150</li></ul>";
     const menageComplet = "<strong>Ménage complet :</strong><br>Prestation de ménage intégral, poussière, balai, aspirateur, serpillière, vitres, dans toutes les pièces y compris salle de bain et cuisine.";
     const livraisonSeule = "<strong>Livraison seule :</strong><br>Profitez de la prestation livraison seule au pied de l&#39;immeuble ou en étage sur votre palier, à vous de décider.";

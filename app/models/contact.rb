@@ -20,6 +20,7 @@ class Contact < MailForm::Base
   attribute :project_description
   attribute :message
   attribute :nickname,  :captcha  => true
+  validates :checkbox_info, presence: true, acceptance: true
 
   def headers
     {
