@@ -13,8 +13,8 @@ class Contact < MailForm::Base
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :tax_number
   attribute :siren_number
-  attribute :pack, validate: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure']
-  attribute :options, validate: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule']
+  attribute :pack, validate: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], allow_blank: true
+  attribute :options, validate: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], allow_blank: true
   attribute :number_properties
   attribute :adresses_properties
   attribute :project_description
