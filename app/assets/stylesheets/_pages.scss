@@ -425,7 +425,7 @@ img {
     display: inline-block;
     font-size: 16px;
     line-height: 20px;
-    color: #0F123B;
+    color: #fff;
     background-color: transparent;
     padding: 13.5px 44px;
     font-weight: 500;
@@ -476,7 +476,11 @@ img {
 .btn-style-two span {
     position: relative;
     z-index: 2;
-    color: #0F123B;
+    color: #fff;
+}
+
+.btn-style-two, .modal-btn span {
+  color: #0F123B;
 }
 
 /* Header Style */

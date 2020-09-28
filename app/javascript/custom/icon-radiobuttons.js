@@ -44,6 +44,12 @@ const iconRadiobuttons = () => {
     const icon_html = `<a href="" data-toggle='tooltip' data-html="true" title='${title}'><span class="far fa-sm fa-info-circle ml-1"></span></a>`;
     radioButton.insertAdjacentHTML('beforeend', icon_html);
   })
+  const as = document.querySelectorAll('.devis-informations .form-check.form-check-inline a');
+  as.forEach((a) => {
+    a.addEventListener('click', (event) => {
+      event.preventDefault();
+    })
+  })
 };
 
 
