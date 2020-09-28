@@ -80,12 +80,12 @@
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :pack, label: "Vos attentes en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], item_wrapper_class: 'form-check form-check-inline'  %>
+        <%= f.input :pack, label: "Vos attentes en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline'  %>
       </div>
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :options, label: 'Options complémentaires', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], item_wrapper_class: 'form-check form-check-inline' %>
+        <%= f.input :options, label: 'Options complémentaires', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline' %>
       </div>
 
       <div class="col-md-12 form-group">
