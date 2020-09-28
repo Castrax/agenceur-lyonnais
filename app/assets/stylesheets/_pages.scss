@@ -385,7 +385,7 @@ img {
     height: 100%;
     width: 100%;
     content: "";
-    background-color: #222;
+    background-color: #fff;
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
@@ -424,11 +424,11 @@ img {
     position: relative;
     display: inline-block;
     font-size: 16px;
-    line-height: 24px;
-    color: #222;
+    line-height: 20px;
+    color: #0F123B;
     background-color: transparent;
     padding: 13.5px 44px;
-    font-weight: 600;
+    font-weight: 500;
     overflow: hidden;
     text-transform: uppercase;
     border: 1px solid;
@@ -476,7 +476,7 @@ img {
 .btn-style-two span {
     position: relative;
     z-index: 2;
-    color: white;
+    color: #0F123B;
 }
 
 /* Header Style */
@@ -3291,6 +3291,7 @@ img {
   margin-top: 1rem;
   font-size: 1.1rem;
   color: #0f123b;
+  text-align: justify;
 }
 
 .process-block h4 {
@@ -4355,6 +4356,16 @@ img {
     margin-bottom: 0;
     font-size: 1rem;
     font-weight: 400;
+}
+
+.pricing-block > .category, .flat {
+  color: #DFB059;
+  font-style: italic;
+}
+
+.pricing-block > .text, .add {
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem;
 }
 
 .pricing-block ul {
@@ -6108,7 +6119,7 @@ input[type=checkbox]:checked + label:before{
 
 /* Projects Section Five */
 .height-box {
-  height: 726px;
+  height: 920px;
 }
 
 .projects-section-five {
@@ -8396,5 +8407,18 @@ input[type=checkbox]:checked + label:before{
   background-color: #E7AF47 !important;
 }
 
+/* Modal */
 
+.modal-body li {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.8rem;
+}
 
+.modal-footer .btn-secondary {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #0f123b;
+}
+
+.modal-title {
+  line-height: 2.5 !important;
+}
