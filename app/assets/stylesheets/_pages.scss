@@ -4344,6 +4344,7 @@ img {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     margin-bottom: 40px;
+    height: 300px;
 }
 
 .pricing-block .price {
@@ -4375,6 +4376,10 @@ img {
 .pricing-block ul {
     position: relative;
     padding-bottom: 15px;
+}
+
+.pricing-block .small-ul {
+  height: 224px;
 }
 
 .pricing-block ul li {

@@ -36,8 +36,8 @@
         <div class="auto-container">
             <div class="sec-title text-center light">
                 <span class="sec-title-dec"></span>
-                <div class="subtitle-text">À propos de nous</div>
-                <h2 class="dark">L'Agenceur Lyonnais s'occupe de tout</h2>
+                <div class="subtitle-text">L'Agenceur Lyonnais s'occupe de tout</div>
+                <h2 class="dark">Meubler vos biens, n’aura jamais été aussi simple</h2>
                 <div class="process-subtext">Simplifiez-vous la vie et obtenez une idée claire des services que notre équipe commerciale peut vous fournir. <br />Que vous soyez un professionnel, un investisseur ou un particulier, l'Agenceur Lyonnais prend en charge l'intégralité de la logistique<br /> allant de la sélection du mobilier, jusqu'à l'installation finale. Elle est pas belle la vie ?</div>
             </div>
             <div class="container">
@@ -132,7 +132,6 @@
     <section class="pricing-section style-two">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <div class="shape-one"></div>
                 <span class="sec-title-dec"></span>
                 <h4 class="subtitle">Nos offres</h4>
                 <h2>Nos services pour la mise en location</h2>
@@ -150,7 +149,7 @@
                                 <div class="price"><span style="font-size: 0.8rem">À partir de</span> <strong>3 597€</strong></div>
                                 <div class="text">Pack clé en main incluant tout le nécessaire pour la vie étudiante</div>
                             </div>
-                            <ul>
+                            <ul class="small-ul">
                               <li class="active"><strong>Aménagement du bien</strong> <br>Mobilier de grande enseigne ainsi que tout le nécessaire pour habiter le bien dès la fin de notre prestation.<br /><br /> Profitez pleinement de votre temps libre pour aider vos étudiants dans leurs démarches d'inscription.</li>
                             </ul>
                         </div>
@@ -167,7 +166,7 @@
                                 <div class="price"><span style="font-size: 0.8rem">À partir de</span> <strong>4 214€</strong></div>
                                 <div class="text">Pack clé en main incluant le nécessaire pour la location meublée, ainsi qu’une décoration élégante minimaliste</div>
                             </div>
-                            <ul>
+                            <ul class="small-ul">
                               <li class="active"><strong>Aménagement du bien</strong> <br>Mobilier obligatoire pour être éligible à la location meublée<br /><br /> Nous assurons l'ensemble de la logistique, transport, déchargement, montage et évacuation des déchets.</li>
                             </ul>
                         </div>
@@ -184,7 +183,7 @@
                                 <div class="price"><span style="font-size: 0.8rem">À partir de</span> <strong>4 997€</strong></div>
                                 <div class="text">Pack clé en main incluant TOUT le nécessaire pour la location meublée ainsi qu’une décoration soignée par notre service de décoration d’intérieur</div>
                             </div>
-                            <ul>
+                            <ul class="small-ul">
                               <li class="active"><strong>Pack standard</strong> <br><br><strong>+</strong><br><br> <strong>Mobilier et petit électroménager</strong><br>TV, bouilloire, grille pain, cafetière, aspirateur...</li>
                             </ul>
                         </div>
@@ -228,16 +227,30 @@
                             <div class="image"><%= cl_image_tag("resource/completez-pack_gthnic") %></div>
                             <div class="content">
                                 <h4>Complétez votre pack...</h4>
-                                <div class="link-btn"><div class="text">Petits et gros électroménagers <br>Ménage complet <br>Linge de maison <br>Mobilier extérieur (Balcon/terrasse) <br>Réalisation de photos</div></div>
+                                <div class="link-btn">
+                                  <div class="text">
+                                    <ul>
+                                      <li>Petits et gros électroménagers</li>
+                                      <li>Ménage complet</li>
+                                      <li>Linge de maison</li>
+                                      <li>Mobilier extérieur (Balcon/terrasse)</li>
+                                      <li>Réalisation de photos</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+                      </div>
                     </div>
                     <div class="service-block-one">
                         <div class="inner-box wow fadeInUp">
                             <div class="image"><%= cl_image_tag("resource/allegez-pack_g7hchw") %></div>
                             <div class="content">
                                 <h4>Allégez votre pack...</h4>
-                                <div class="link-btn"><div class="text">Vous souhaitez rester autonome ? <br>Bénéficiez de nos packs sans <br>la prestation de montage. <br>Nous vous livrons chez vous ! <br><br></div></div>
+                                <div class="link-btn">
+                                  <div class="text">
+                                    Vous souhaitez rester autonome ? <br>Bénéficiez de nos packs sans <br>la prestation de montage. <br>Nous vous livrons chez vous ! <br><br>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
