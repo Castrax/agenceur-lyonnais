@@ -90,7 +90,7 @@
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :number_properties, label: 'Nombre de biens à aménager', as: :integer, placeholder: 'Ex : 2' %>
+        <%= f.input :number_properties, label: 'Nombre de biens à aménager', as: :integer, input_html: { min: '0', max: '10' }, placeholder: 'Ex : 2' %>
       </div>
 
       <div class="col-md-12 form-group">

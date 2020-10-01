@@ -4489,6 +4489,10 @@ img {
   margin-right: 0 !important;
 }
 
+.devis-informations .form-check-inline {
+  width: 225px;
+}
+
 input[type=radio],
 input[type=checkbox]{
   /* hide original inputs */
@@ -5304,6 +5308,18 @@ input[type=checkbox]:checked + label:before{
     height: 430px;
     background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597227770/shape/shape-3_aiqrpo.png);
     transform: translateY(-50%);
+}
+
+.about-us-section-four li {
+  padding: 20px 0 20px 0;
+  margin-right: 30px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.about-us-section-four button {
+  background-color: transparent;
+  color: white;
 }
 
 /* CTA Section */
@@ -8430,4 +8446,15 @@ input[type=checkbox]:checked + label:before{
 
 .modal-title {
   line-height: 2.5 !important;
+}
+
+/* Popover */
+
+.popover-body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.steps-amenagement {
+  color: #DEB05A;
+  font-weight: 500;
 }

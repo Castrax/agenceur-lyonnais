@@ -237,6 +237,8 @@ fr:
         city: "Ville"
         tax_number: "Numéro de TVA"
         siren_number: "Numéro SIREN"
+        pack: "Attentes en terme d'offre"
+        options: "Options complémentaires choisies"
         number_properties: "Nombre de propriétés"
         adresses_properties: "Adresse(s) de(s) propriété(s)"
         project_description: "Description du projet"

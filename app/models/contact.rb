@@ -14,7 +14,7 @@ class Contact < MailForm::Base
   attribute :tax_number
   attribute :siren_number
   attribute :pack
-  attribute :options, validate: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], allow_blank: true
+  attribute :options
   attribute :number_properties
   attribute :adresses_properties
   attribute :project_description

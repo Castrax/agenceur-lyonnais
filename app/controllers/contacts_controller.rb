@@ -18,6 +18,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:status, :demand, :civility, :name_society, :first_name, :last_name, :address, :zip_code, :city, :telephone, :telephone_pro, :email, :message, :tax_number, :siren_number, { pack: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'] }, { options: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'] }, :number_properties, :adresses_properties, :project_description, :nickname, :captcha, :checkbox_info, :checkbox_devis)
+    params.require(:contact).permit(:status, :demand, :civility, :name_society, :first_name, :last_name, :address, :zip_code, :city, :telephone, :telephone_pro, :email, :message, :tax_number, :siren_number, :number_properties, :adresses_properties, :project_description, :nickname, :captcha, :checkbox_info, :checkbox_devis, :pack => [], :options => [])
   end
 end

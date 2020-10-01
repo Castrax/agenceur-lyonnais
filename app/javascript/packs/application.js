@@ -17,11 +17,12 @@ require("channels")
 
 import 'bootstrap';
 import Swal from 'sweetalert2';
-import 'sweetalert2/src/sweetalert2.scss'
+import 'sweetalert2/src/sweetalert2.scss';
 window.Swal = Swal;
 import { iconRadiobuttons } from '../custom/icon-radiobuttons';
-require("custom/script")
-require("custom/form-fields")
+require("custom/script");
+require("custom/form-fields");
+require("custom/popover");
 iconRadiobuttons();
 import Cookies from 'js.cookie';
 window.Cookies = Cookies;
