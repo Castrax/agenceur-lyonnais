@@ -4344,7 +4344,6 @@ img {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     margin-bottom: 40px;
-    height: 300px;
 }
 
 .pricing-block .price {
@@ -4402,6 +4401,13 @@ img {
 
 .pricing-block ul li.active strong {
     opacity: 1;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .pricing-block .price-box {
+    height: 300px;
+  }
 }
 
 /* Contact Form */

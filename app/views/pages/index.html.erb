@@ -42,7 +42,7 @@
               </div>
               <div class="container">
                 <div class="row">
-                    <div class="process-block col-lg-4">
+                    <div class="process-block col-lg-4 col-md-4">
                         <div class="inner-box wow fadeInLeft" data-wow-duration="1500ms">
                             <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_36_sljdoe") %></div>
                             <div class="content">
@@ -52,7 +52,7 @@
                             <div class="count-text">Après un recensement de vos besoins, nous serons en mesure de vous envoyer un devis adapté à vos attentes.</div>
                         </div>
                     </div>
-                    <div class="process-block col-lg-4">
+                    <div class="process-block col-lg-4 col-md-4">
                         <div class="inner-box">
                             <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_38_k7cwpi") %></div>
                             <div class="content">
@@ -62,7 +62,7 @@
                             <div class="count-text">Dès réception du paiement, nous passons votre commande en production.</div>
                         </div>
                     </div>
-                    <div class="process-block col-lg-4">
+                    <div class="process-block col-lg-4 col-md-4">
                         <div class="inner-box wow fadeInRight" data-wow-duration="1500ms">
                             <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_58_csq9wy") %></div>
                             <div class="content">
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-5 process-block">
+                    <div class="col-lg-5 col-md-5 process-block">
                         <div class="inner-box wow fadeInLeft" data-wow-duration="1500ms">
                             <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_40_habsjv") %></div>
                             <div class="content">
@@ -84,7 +84,7 @@
                             <div class="count-text">À partir de ce moment-là, vous n'avez plus à rien faire !</div>
                         </div>
                     </div>
-                    <div class="col-lg-5 process-block">
+                    <div class="col-lg-5 col-md-5 process-block">
                         <div class="inner-box">
                             <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_56_ztrknr") %></div>
                             <div class="content">
@@ -139,7 +139,7 @@
                   <div class="text">Nos prestations sont réalisées par nos équipes formées et expérimentées</div>
               </div>
               <div class="row">
-                  <div class="col-lg-3 pricing-block">
+                  <div class="col-lg-3 col-md-6 pricing-block">
                       <div class="inner-box height-box">
                           <div class="wrapper-box">
                               <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_48_zilpkv", :transformation => { :height => 76, :crop => :fill }) %></div>
@@ -156,7 +156,7 @@
                           <div class="link-btn"><button type="button" class="theme-btn btn-style-two modal-btn" data-toggle="modal" data-target="#modalEtudiant"><span>Notre sélection</span></button></div>
                       </div>
                   </div>
-                  <div class="col-lg-3 pricing-block">
+                  <div class="col-lg-3 col-md-6 pricing-block">
                       <div class="inner-box height-box">
                           <div class="wrapper-box">
                               <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_52_n4mnvn", :transformation => { :height => 76, :crop => :fill }) %></div>
@@ -173,7 +173,7 @@
                           <div class="link-btn"><button type="button" class="theme-btn btn-style-two modal-btn" data-toggle="modal" data-target="#modalStandard"><span>Notre sélection</span></button></div>
                       </div>
                   </div>
-                  <div class="col-lg-3 pricing-block">
+                  <div class="col-lg-3 col-md-6 pricing-block">
                       <div class="inner-box height-box">
                           <div class="wrapper-box">
                               <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_46_rzijka", :transformation => { :height => 76, :crop => :fill }) %></div>
@@ -184,13 +184,16 @@
                                   <div class="text">Pack clé en main incluant TOUT le nécessaire pour la location meublée ainsi qu’une décoration soignée par notre service de décoration d’intérieur</div>
                               </div>
                               <ul class="small-ul">
-                                <li class="active"><strong>Pack standard</strong> <br><br><strong>+</strong><br><br> <strong>Mobilier et petit électroménager</strong><br>TV, bouilloire, grille pain, cafetière, aspirateur...</li>
+                                <li class="active"><strong>Pack standard</strong>
+                                <li class="active"><strong>+</strong></li>
+                                <li class="active"><strong>Mobilier et petit électroménager</strong></li>
+                                <li class="active">TV, bouilloire, grille pain, cafetière, aspirateur...</li>
                               </ul>
                           </div>
                           <div class="link-btn"><button type="button" class="theme-btn btn-style-two modal-btn" data-toggle="modal" data-target="#modalConfort"><span>Notre sélection</span></button></div>
                       </div>
                   </div>
-                  <div class="col-lg-3 pricing-block">
+                  <div class="col-lg-3 col-md-6 pricing-block">
                       <div class="inner-box">
                           <div class="wrapper-box">
                               <div class="icon"><%= cl_image_tag("icons/agenceur_iconePlan_de_travail_50_cpg7xs", :transformation => { :height => 76, :crop => :pad }) %></div>
@@ -201,7 +204,10 @@
                                   <div class="text">Savoir-faire d’un décorateur d’intérieur adapté à vos inspirations et à votre budget.</div>
                               </div>
                               <ul>
-                                <li class="active"><strong>RDV avec notre décorateur d'intérieur</strong> <br><br><strong>-</strong><br><br> <strong>Sélection de votre mobilier</strong><br><br>-<br><br><strong>Conception de votre cuisine et salle de bain</strong><br><br>-<br><br><strong>Accompagnement, organisation et gestion de la réalisation de votre projet clé en main</strong></li>
+                                <li class="active"><strong>RDV avec notre décorateur d'intérieur</strong></li>
+                                <li class="active"><strong>Sélection de votre mobilier</strong></li>
+                                <li class="active"><strong>Conception de votre cuisine et salle de bain</strong></li>
+                                <li class="active"><strong>Accompagnement, organisation et gestion de la réalisation de votre projet clé en main</strong></li>
                               </ul>
                           </div>
                         </div>
