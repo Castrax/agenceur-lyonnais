@@ -25,8 +25,10 @@ class Contact < MailForm::Base
   def headers
     {
       :subject => "#{demand} : #{status} - #{first_name} #{last_name}",
-      :to => "contact@lagenceur-lyonnais.fr",
+      :to => "m.robert@skema.edu",
       :from => %("L'Agenceur Lyonnais" <m.robert@skema.edu>)
     }
   end
 end
+
+#contact@lagenceur-lyonnais.fr
