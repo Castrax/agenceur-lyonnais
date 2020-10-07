@@ -2595,6 +2595,10 @@ img {
     width: 50px;
 }
 
+.main-footer .about-widget ul li {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
 /* About Widget */
 .about-widget .text {
     margin-bottom: 30px;
@@ -4379,9 +4383,6 @@ img {
     padding-bottom: 15px;
 }
 
-.pricing-block .small-ul {
-  height: 370px;
-}
 
 .pricing-block ul li {
     font-size: 12px;
@@ -4410,7 +4411,16 @@ img {
   .pricing-block .price-box {
     height: 300px;
   }
+
+  .height-box {
+    height: 1150px;
+  }
+
+  .pricing-block .small-ul {
+    height: 370px;
+  }
 }
+
 
 /* Contact Form */
 
@@ -6151,9 +6161,6 @@ input[type=checkbox]:checked + label:before{
 
 
 /* Projects Section Five */
-.height-box {
-  height: 1150px;
-}
 
 .projects-section-five {
     position: relative;
@@ -6586,6 +6593,10 @@ input[type=checkbox]:checked + label:before{
     position: relative;
     color: #fff;
     margin-bottom: 30px;
+}
+
+.about-section-six .tab-content .text, .bold {
+    font-weight: 600;
 }
 
 .about-section-six .tab-content ul li {

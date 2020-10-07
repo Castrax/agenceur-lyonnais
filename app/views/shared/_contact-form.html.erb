@@ -80,27 +80,22 @@
 
       <div class="col-md-12 form-group">
         <br>
+        <%= f.input :number_properties, label: 'Nombre de biens à aménager', :collection => (1..10), placeholder: 'Ex : 2' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :adresses_properties, label: 'Informations sur le(s) bien(s) à aménager', as: :text, placeholder: "Veuillez indiquer à la suite pour chacun de vos biens : les adresses postales, le nombre d'étages, si le bien est ancien ou neuf." %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
         <%= f.input :pack, label: "Vos attentes en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline'  %>
       </div>
 
       <div class="col-md-12 form-group">
         <br>
         <%= f.input :options, label: 'Options complémentaires', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline' %>
-      </div>
-
-      <div class="col-md-12 form-group">
-        <br>
-        <%= f.input :number_properties, label: 'Nombre de biens à aménager', as: :integer, input_html: { min: '0', max: '10' }, placeholder: 'Ex : 2' %>
-      </div>
-
-      <div class="col-md-12 form-group">
-        <br>
-        <%= f.input :adresses_properties, label: 'Adresse(s) du(des) bien(s) à aménager', as: :text %>
-      </div>
-
-      <div class="col-md-12 form-group">
-        <br>
-        <%= f.input :project_description, label: 'Veuillez décrire votre projet', as: :text %>
       </div>
     </div>
 
