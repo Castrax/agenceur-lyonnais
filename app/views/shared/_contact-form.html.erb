@@ -43,12 +43,7 @@
 
     <div class="col-md-12 form-group">
       <br>
-      <%= f.input :telephone, label: 'Téléphone', as: :tel %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :telephone_pro, label: 'Téléphone pro', as: :tel, error: 'Veuillez entrer un numéro de téléphone professionnel' %>
+      <%= f.input :telephone, label: 'Téléphone', as: :tel, error: 'Veuillez entrer un numéro de téléphone' %>
     </div>
 
     <div class="col-md-12 form-group">
@@ -110,7 +105,7 @@
       </div>
 
     <div class="col-md-12 form-group-two">
-      <%= f.submit 'Envoyer votre demande', class: 'theme-btn btn-style-one' %>
+      <%= f.submit 'Envoyer votre demande', class: 'theme-btn btn-style-one', :"data-turbolinks" => "false" %>
     </div>
   </div>
 <% end %>

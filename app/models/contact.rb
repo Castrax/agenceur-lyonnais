@@ -8,8 +8,7 @@ class Contact < MailForm::Base
   attribute :address, :validate => true
   attribute :zip_code, :validate => true
   attribute :city, :validate => true
-  attribute :telephone
-  attribute :telephone_pro
+  attribute :telephone, :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :tax_number
   attribute :siren_number
