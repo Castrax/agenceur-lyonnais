@@ -3,7 +3,7 @@ const iconRadiobuttons = () => {
     $('[data-toggle="tooltip"]').tooltip()
   })
 
-  const radioButtons = document.querySelectorAll('.devis-informations .form-check.form-check-inline');
+  const radioButtons = document.querySelectorAll('.devis-informations .form-check.form-check-inline.icon-tooltip');
   radioButtons.forEach((radioButton) => {
     const petitElectro = "<strong>Petit électroménager :</strong><br><ul><li>Machine à café</li><li>Bouilloire</li><li>Grille-pain</li><li>Aspirateur</li><li>Pèse-personne</li><li>Fer à repasser</li><li>Table à repasser</li></ul>";
     const grosElectro = "<strong>Gros électroménager :</strong><br><ul><li>Hotte aspirante</li><li>Lave-vaisselle</li><li>Four</li><li>Lave-linge</li></ul>";
@@ -38,7 +38,7 @@ const iconRadiobuttons = () => {
       title = menageComplet
     } else if (value === "Réalisation de photos") {
       title = realPhotos
-    } else {
+    } else if (value === 'Livraison seule') {
       title = livraisonSeule
     };
     const icon_html = `<a href="" data-toggle='tooltip' data-html="true" title='${title}'><span class="far fa-sm fa-info-circle ml-1"></span></a>`;

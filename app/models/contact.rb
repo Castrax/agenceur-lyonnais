@@ -16,6 +16,7 @@ class Contact < MailForm::Base
   attribute :pack
   attribute :options
   attribute :number_properties
+  attribute :typology
   attribute :adresses_properties
   attribute :project_description
   attribute :message

@@ -3300,7 +3300,7 @@ img {
   margin-top: 1rem;
   font-size: 1.1rem;
   color: #0f123b;
-  text-align: justify;
+  text-align: center;
 }
 
 .process-block h4 {
@@ -4413,11 +4413,15 @@ img {
   }
 
   .height-box {
-    height: 1150px;
+    height: 1200px;
   }
 
   .pricing-block .small-ul {
-    height: 370px;
+    height: 400px;
+  }
+
+  .pricing-block .big-ul {
+    height: 456px;
   }
 }
 
@@ -4607,6 +4611,10 @@ input[type=checkbox]:checked + label:before{
   margin-bottom: 2rem;
 }
 
+.contact-section .text, .optional {
+  margin-bottom: 0.5rem;
+}
+
 .contact-section .wrapper-box {
     position: relative;
     background-color: #fff;
@@ -4722,6 +4730,10 @@ input[type=checkbox]:checked + label:before{
     top: 10px;
     height: 2px;
     width: 100px;
+}
+
+.contact-section .form-check {
+  padding-left: 0;
 }
 
 /* About Us Section Three */

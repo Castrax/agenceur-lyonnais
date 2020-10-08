@@ -80,22 +80,27 @@
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :number_properties, label: 'Nombre de biens à aménager', :collection => (1..10), placeholder: 'Ex : 2' %>
+        <%= f.input :number_properties, label: 'Nombre de biens à aménager', as: :integer, input_html: { min: '0', max: '20'}, placeholder: 'Ex : 2', item_wrapper_class: 'form-check form-check-inline' %>
       </div>
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :adresses_properties, label: 'Informations sur le(s) bien(s) à aménager', as: :text, placeholder: "Veuillez indiquer à la suite pour chacun de vos biens : les adresses postales, le nombre d'étages, si le bien est ancien ou neuf." %>
+        <%= f.input :typology, label: 'Typologie de vos biens', as: :check_boxes, collection: ['Studio/T1', 'T2', 'T3', 'T4', 'T5', 'Autre'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline' %>
       </div>
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :pack, label: "Vos attentes en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline'  %>
+        <%= f.input :adresses_properties, label: 'Informations sur le(s) bien(s) à aménager', as: :text, placeholder: "Veuillez indiquer à la suite pour chacun de vos biens : les adresses postales, le nombre d'étages, un ascenseur (oui/non), si le bien est ancien ou neuf." %>
       </div>
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :options, label: 'Options complémentaires', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline' %>
+        <%= f.input :pack, label: "Vos attentes en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline icon-tooltip'  %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :options, label: 'Options complémentaires', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline icon-tooltip' %>
       </div>
     </div>
 
