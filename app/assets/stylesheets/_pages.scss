@@ -2742,6 +2742,7 @@ img {
 
 .footer-bottom .copyright {
     color: #fff;
+    font-size: 0.9rem;
 }
 
 .footer-bottom .copyright a {
@@ -3044,6 +3045,10 @@ img {
     letter-spacing: -3px;
 }
 
+.about-section-six .sec-title h2 {
+  margin-bottom: 5px;
+}
+
 .sec-title.style-two h2 {
     font-weight: 700;
     letter-spacing: -2px;
@@ -3145,6 +3150,9 @@ img {
 .border-shape.style-two:before {
     display: none;
 }
+.service-block-one {
+  width: 400px;
+}
 
 .service-block-one .inner-box {
     position: relative;
@@ -3169,6 +3177,7 @@ img {
     box-shadow: 0px 5px 18.9px 2.1px rgba(0, 0, 0, 0.05);
     padding: 40px 45px 30px;
     background-color: #fff;
+    height: 317px;
 }
 
 .service-block-one .content:before {
@@ -4630,6 +4639,10 @@ input[type=checkbox]:checked + label:before{
     margin-top: 25px;
 }
 
+.contact-section .about-us-section-five {
+  margin-top: 0;
+}
+
 .contact-subtext {
   font-family: 'Work Sans', sans-serif;
   font-size: 17px;
@@ -5964,6 +5977,10 @@ input[type=checkbox]:checked + label:before{
 
 .about-us-section-five .subtitle-proximité {
   font-size: 2.2rem;
+  letter-spacing: -3px;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 3rem;
 }
 
 .about-us-section-five .text {
@@ -5992,7 +6009,7 @@ input[type=checkbox]:checked + label:before{
     position: relative;
     font-size: 48px;
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     letter-spacing: -3px;
 }
 
@@ -6542,8 +6559,11 @@ input[type=checkbox]:checked + label:before{
 }
 
 .about-section-six .valeurajoutee-subtitle {
+  font-family: 'Work Sans', sans-serif;
   font-size: 2.2rem;
   font-weight: 500;
+  color: #fff;
+  letter-spacing: -2px;
 }
 
 .about-section-six .text {
