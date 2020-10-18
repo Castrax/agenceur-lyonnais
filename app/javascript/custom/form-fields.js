@@ -23,7 +23,7 @@ $(document).ready(function() {
       }
       else if (this.value == 'Une demande de devis') {
           $('.devis-informations').removeClass('form-group--inactive');
-          $('.form-group.contact_message').addClass('form-group--inactive');
+          // $('.form-group.contact_message').addClass('form-group--inactive');
       }
   });
 });

@@ -8513,3 +8513,9 @@ input[type=checkbox]:checked + label:before{
 .value-info-circle {
   color: #DEB05A;
 }
+
+/* Tooltip */
+
+.tooltip-inner ul {
+  margin-bottom: 0;
+}
