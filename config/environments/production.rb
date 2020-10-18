@@ -114,9 +114,10 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
+    :from => 'm.robert@skema.edu',
     :user_name => 'apikey',
     :password => ENV['SENDGRID_APIKEY'],
-    :domain => 'heroku.com',
+    :domain => 'fierce-shelf-59317.herokuapp.com',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
