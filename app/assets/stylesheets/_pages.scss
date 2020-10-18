@@ -188,6 +188,12 @@ img {
     height: auto;
 }
 
+@media screen and (max-width: 640px) {
+  .about-section-six img {
+    max-width: 80%;
+  }
+}
+
 .dropdown-toggle::after {
     display: none;
 }
@@ -4606,6 +4612,12 @@ input[type=checkbox]:checked + label:before{
     background-size: cover;
 }
 
+@media (min-width: 992px) {
+  .pricing-block .price-box {
+    height: 300px;
+  }
+}
+
 .contact-section .sec-bg {
     background-image: url(https://res.cloudinary.com/dri5sbvqn/image/upload/v1597239206/resource/bg-contact_xnwjpf.png);
     position: absolute;
@@ -4614,6 +4626,20 @@ input[type=checkbox]:checked + label:before{
     width: 100%;
     height: 600px;
     background-size: cover;
+}
+
+@media screen and (max-width: 640px) {
+  .contact-section .sec-bg-qui-sommes-nous {
+    top: -40px;
+    height: 240px;
+    width: 100%;
+  }
+
+  .contact-section .sec-bg {
+    top: -40px;
+    height: 240px;
+    width: 100%;
+  }
 }
 
 .contact-section .text {
