@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.deliver
         format.html { redirect_to root_path, notice: "Merci pour votre prise de contact" }
-        format.json
+        format.js
       else
         format.html { render :new, notice: "Impossible d'envoyer le message" }
         format.json { render json: @contact.errors, status: unprocessable_entity }
