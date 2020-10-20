@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1><%= @contact.demand %> - <%= @contact.first_name %><%= @contact.last_name %></h1>
+    <p>Vous avez une nouvelle prise de contact sur le site L'Agenceur Lyonnais.</p>
+    <p>Statut : <%= @contact.status %></p>
+    <p>Type de demande : <%= @contact.demand %></p>
+    <% if @contact.civility %>
+      <p>Civilité : <%= @contact.civility %></p>
+    <% end %>
+    <% if @contact.name_society %>
+      <p>Nom de la société : <%= @contact.name_society %></p>
+    <% end %>
+    <p>Nom de famille : <%= @contact.last_name %></p>
+    <p>Prénom : <%= @contact.first_name %></p>
+    <p>Adresse : <%= @contact.address %></p>
+    <p>Code postal : <%= @contact.zip_code %></p>
+    <p>Ville : <%= @contact.city %></p>
+    <p>Téléphone : <%= @contact.tel %></p>
+    <p>Email : <%= @contact.email %></p>
+    <% if @contact.tax_number %>
+      <p>N° de TVA : <%= @contact.tax_number %></p>
+    <% end %>
+    <% if @contact.siren_number %>
+      <p>N° SIREN : <%= @contact.siren_number %></p>
+    <% end %>
+    <% if @contact.message %>
+      <p>Message : <%= @contact.message %></p>
+    <% end %>
+  </body>
+</html>

@@ -1,34 +1,12 @@
-class Contact < MailForm::Base
-  attribute :status, :validate => true
-  attribute :demand, :validate => true
-  attribute :name_society
-  attribute :civility
-  attribute :last_name, :validate => true
-  attribute :first_name, :validate => true
-  attribute :address, :validate => true
-  attribute :zip_code, :validate => true
-  attribute :city, :validate => true
-  attribute :telephone, :validate => true
-  attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
-  attribute :tax_number
-  attribute :siren_number
-  attribute :pack
-  attribute :options
-  attribute :number_properties
-  attribute :typology
-  attribute :adresses_properties
-  attribute :project_description
-  attribute :message
-  attribute :nickname,  :captcha  => true
-  validates :checkbox_info, presence: true, acceptance: true
-
-  def headers
-    {
-      :subject => "#{demand} : #{status} - #{first_name} #{last_name}",
-      :to => "contact@lagenceur-lyonnais.fr",
-      :from => %("L'Agenceur Lyonnais" <m.robert@skema.edu>)
-    }
-  end
+class Contact < ApplicationRecord
+  validates :status, presence: true
+  validates :demand, presence: true
+  validates :last_name, presence: true
+  validates :first_name, presence: true
+  validates :address, presence: true
+  validates :zip_code, presence: true
+  validates :city, presence: true
+  validates :tel, presence: true
+  validates :email, presence: true, format: { with: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i }
+  validates :checkbox_info, acceptance: true
 end
-
-#contact@lagenceur-lyonnais.fr

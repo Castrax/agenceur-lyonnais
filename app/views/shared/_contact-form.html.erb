@@ -43,7 +43,7 @@
 
     <div class="col-md-12 form-group">
       <br>
-      <%= f.input :telephone, label: 'Téléphone', as: :tel, error: 'Veuillez entrer un numéro de téléphone' %>
+      <%= f.input :tel, label: 'Téléphone', as: :tel, error: 'Veuillez entrer un numéro de téléphone' %>
     </div>
 
     <div class="col-md-12 form-group">
@@ -64,10 +64,6 @@
     <div class="col-md-12 form-group">
       <br>
       <%= f.input :message, label: 'Message', as: :text, item_wrapper_class: 'message-subtext' %>
-    </div>
-
-    <div class="col-md-12 form-group d-none">
-      <%= f.input :nickname, label: 'Nickname', hint: 'Veuillez laisser ce champ blanc' %>
     </div>
     <% if false %>
       <div class="devis-informations">

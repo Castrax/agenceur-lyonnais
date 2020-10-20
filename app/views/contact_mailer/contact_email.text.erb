@@ -1,0 +1,28 @@
+<%= @contact.demand %> - <%= @contact.first_name %><%= @contact.last_name %>
+----------------------------------------------------------------------------
+Vous avez une nouvelle prise de contact sur le site L'Agenceur Lyonnais.
+Statut : <%= @contact.status %>
+Type de demande : <%= @contact.demand %>
+<% if @contact.civility %>
+  Civilité : <%= @contact.civility %>
+<% end %>
+<% if @contact.name_society %>
+  Nom de la société : <%= @contact.name_society %>
+<% end %>
+Nom de famille : <%= @contact.last_name %>
+Prénom : <%= @contact.first_name %>
+Adresse : <%= @contact.address %>
+Code postal : <%= @contact.zip_code %>
+Ville : <%= @contact.city %>
+Téléphone : <%= @contact.tel %>
+Email : <%= @contact.email %>
+<% if @contact.tax_number %>
+  N° de TVA : <%= @contact.tax_number %>
+<% end %>
+<% if @contact.siren_number %>
+  N° SIREN : <%= @contact.siren_number %>
+<% end %>
+<% if @contact.message %>
+  Message : <%= @contact.message %>
+<% end %>
+
