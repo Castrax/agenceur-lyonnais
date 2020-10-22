@@ -114,13 +114,12 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-    :from => 'm.robert@skema.edu',
-    :user_name => 'apikey',
-    :password => ENV['SENDGRID_APIKEY'],
-    :domain => 'fierce-shelf-59317.herokuapp.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
+    :from => 'contact@lagenceur-lyonnais.fr',
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => ENV['GMAIL_USERNAME'],
+    :password             => ENV['GMAIL_USERNAME'],
+    :authentication       => "plain",
     :enable_starttls_auto => true
   }
 end
