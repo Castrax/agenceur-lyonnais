@@ -1,110 +1,113 @@
-<%= simple_form_for @contact, :html => { class: "contact-form" } do |f| %>
-  <div class="row">
-    <div class="col-md-12 form-group">
-      <%= f.input :status, label: 'Vous êtes', as: :radio_buttons, collection: ['Particulier', 'Professionnel'], error: 'Veuillez sélectionner votre statut', item_wrapper_class: 'form-check form-check-inline' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <%= f.input :demand, label: 'Vous souhaitez', as: :radio_buttons, collection: ["Une demande d'information", 'Une demande de devis'], error: 'Veuillez sélectionner votre type de demande', item_wrapper_class: 'form-check form-check-inline' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <%= f.input :civility, label: 'Civilité', as: :radio_buttons, collection: ['Madame', 'Monsieur'], item_wrapper_class: 'form-check form-check-inline' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <%= f.input :name_society, label: "Nom d'entreprise", error: 'Veuillez entrer le nom de votre entreprise' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :last_name, label: 'Nom', error: 'Veuillez entrer votre nom' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :first_name, label: 'Prénom', error: 'Veuillez entrer votre prénom' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :address, label: 'Adresse', error: 'Veuillez entrer votre adresse' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :zip_code, label: 'Code postal', error: 'Veuillez entrer votre code postal' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :city, label: 'Ville', error: 'Veuillez entrer votre ville' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :tel, label: 'Téléphone', as: :tel, error: 'Veuillez entrer un numéro de téléphone' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :email, label: 'Email', error: 'Veuillez entrer votre email', placeholder: 'Promis, on ne vous spammera pas...' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :tax_number, label: 'Numéro de TVA' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :siren_number, label: 'Numéro de SIREN' %>
-    </div>
-
-    <div class="col-md-12 form-group">
-      <br>
-      <%= f.input :message, label: 'Message', as: :text, item_wrapper_class: 'message-subtext' %>
-    </div>
-    <% if false %>
-      <div class="devis-informations">
-        <h4 class="mt-4">Informations complémentaires</h4>
-        <p class="text">Pour permettre à notre équipe d'affiner votre demande, veuillez renseigner les informations ci-dessous.</p>
-
-        <div class="col-md-12 form-group">
-          <br>
-           <%= f.input :number_properties, label: 'Nombre de biens à aménager', as: :integer, input_html: { min: '0', max: '20'}, placeholder: 'Ex : 2', item_wrapper_class: 'form-check form-check-inline' %>
-        </div>
-
-        <div class="col-md-12 form-group">
-          <br>
-          <%= f.input :typology, label: 'Typologie de vos biens', as: :check_boxes, collection: ['Studio/T1', 'T2', 'T3', 'T4', 'T5', 'Autre'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline' %>
-        </div>
-
-        <div class="col-md-12 form-group">
-          <br>
-          <%= f.input :adresses_properties, label: 'Informations sur le(s) bien(s) à aménager', as: :text, placeholder: "Veuillez indiquer à la suite pour chacun de vos biens : les adresses postales, le nombre d'étages, un ascenseur (oui/non), si le bien est ancien ou neuf." %>
-        </div>
-
-        <div class="col-md-12 form-group">
-          <br>
-          <%= f.input :pack, label: "Vos attentes en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline icon-tooltip'  %>
-        </div>
-
-        <div class="col-md-12 form-group">
-          <br>
-          <%= f.input :options, label: 'Options complémentaires', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline icon-tooltip' %>
-        </div>
+<div class="error-message" data-target="contact.error"></div>
+<div class="validation-message" data-target="contact.validation">
+  <%= simple_form_for @contact, remote: true, :data => { action: 'ajax:success->contact#replace ajax:error->contact#showError', target: "contact.form"}, :html => { class: "contact-form" } do |f| %>
+    <div class="row">
+      <div class="col-md-12 form-group">
+        <%= f.input :status, label: 'Vous êtes', as: :radio_buttons, collection: ['Particulier', 'Professionnel'], error: 'Veuillez sélectionner votre statut', item_wrapper_class: 'form-check form-check-inline' %>
       </div>
-    <% end %>
+
+      <div class="col-md-12 form-group">
+        <%= f.input :demand, label: 'Vous souhaitez', as: :radio_buttons, collection: ["Une demande d'information", 'Une demande de devis'], error: 'Veuillez sélectionner votre type de demande', item_wrapper_class: 'form-check form-check-inline' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <%= f.input :civility, label: 'Civilité', as: :radio_buttons, collection: ['Madame', 'Monsieur'], item_wrapper_class: 'form-check form-check-inline' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <%= f.input :name_society, label: "Nom d'entreprise", error: 'Veuillez entrer le nom de votre entreprise' %>
+      </div>
 
       <div class="col-md-12 form-group">
         <br>
-        <%= f.input :checkbox_info, as: :boolean, label: "En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact ou de devis, et de la relation commerciale qui peut en découler.", error: 'Veuillez cocher la case' %>
+        <%= f.input :last_name, label: 'Nom', error: 'Veuillez entrer votre nom' %>
       </div>
 
-    <div class="col-md-12 form-group-two">
-      <%= f.submit 'Envoyer votre demande', class: 'theme-btn btn-style-one', :"data-turbolinks" => "false" %>
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :first_name, label: 'Prénom', error: 'Veuillez entrer votre prénom' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :address, label: 'Adresse', error: 'Veuillez entrer votre adresse' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :zip_code, label: 'Code postal', error: 'Veuillez entrer votre code postal' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :city, label: 'Ville', error: 'Veuillez entrer votre ville' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :tel, label: 'Téléphone', as: :tel, error: 'Veuillez entrer un numéro de téléphone' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :email, label: 'Email', error: 'Veuillez entrer votre email', placeholder: 'Promis, on ne vous spammera pas...' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :tax_number, label: 'Numéro de TVA' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :siren_number, label: 'Numéro de SIREN' %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <br>
+        <%= f.input :message, label: 'Message', as: :text, item_wrapper_class: 'message-subtext' %>
+      </div>
+      <% if false %>
+        <div class="devis-informations">
+          <h4 class="mt-4">Informations complémentaires</h4>
+          <p class="text">Pour permettre à notre équipe d'affiner votre demande, veuillez renseigner les informations ci-dessous.</p>
+
+          <div class="col-md-12 form-group">
+            <br>
+             <%= f.input :number_properties, label: 'Nombre de biens à aménager', as: :integer, input_html: { min: '0', max: '20'}, placeholder: 'Ex : 2', item_wrapper_class: 'form-check form-check-inline' %>
+          </div>
+
+          <div class="col-md-12 form-group">
+            <br>
+            <%= f.input :typology, label: 'Typologie de vos biens', as: :check_boxes, collection: ['Studio/T1', 'T2', 'T3', 'T4', 'T5', 'Autre'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline' %>
+          </div>
+
+          <div class="col-md-12 form-group">
+            <br>
+            <%= f.input :adresses_properties, label: 'Informations sur le(s) bien(s) à aménager', as: :text, placeholder: "Veuillez indiquer à la suite pour chacun de vos biens : les adresses postales, le nombre d'étages, un ascenseur (oui/non), si le bien est ancien ou neuf." %>
+          </div>
+
+          <div class="col-md-12 form-group">
+            <br>
+            <%= f.input :pack, label: "Vos attentes en terme d'offre", as: :check_boxes, collection: ['Pack standard', 'Pack confort', 'Pack étudiant', 'Pack sur-mesure'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline icon-tooltip'  %>
+          </div>
+
+          <div class="col-md-12 form-group">
+            <br>
+            <%= f.input :options, label: 'Options complémentaires', as: :check_boxes, collection: ['Petit électroménager', 'Gros électroménager', 'Linge de maison', 'Mobilier extérieur', 'Ménage complet', 'Réalisation de photos', 'Livraison seule'], include_hidden: false, item_wrapper_class: 'form-check form-check-inline icon-tooltip' %>
+          </div>
+        </div>
+      <% end %>
+
+        <div class="col-md-12 form-group">
+          <br>
+          <%= f.input :checkbox_info, as: :boolean, label: "En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact ou de devis, et de la relation commerciale qui peut en découler.", error: 'Veuillez cocher la case' %>
+        </div>
+
+      <div class="col-md-12 form-group-two">
+        <%= f.submit 'Envoyer votre demande', data: { target: 'contact.submit', turbolinks: false }, class: 'theme-btn btn-style-one' %>
+      </div>
     </div>
-  </div>
- <!--  test -->
-<% end %>
+   <!--  test -->
+  <% end %>
+</div>

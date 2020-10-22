@@ -7,7 +7,9 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       ContactMailer.with(contact: @contact).contact_email.deliver_now
-      render @contact
+      render @contact, turbolinks: false
+    else
+      render partial: 'error', comment: @comment, status: :unprocessable_entity, turbolinks: false
     end
   end
 

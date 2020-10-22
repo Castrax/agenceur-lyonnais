@@ -20,6 +20,7 @@
     "popper.js": "^1.16.1",
     "rails-erb-loader": "^5.5.2",
     "resolve-url-loader": "^3.1.1",
+    "stimulus": "^1.1.1",
     "sweetalert2": "^9.17.1",
     "turbolinks": "^5.2.0",
     "wowjs": "^1.1.3"

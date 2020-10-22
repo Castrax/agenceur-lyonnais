@@ -566,7 +566,7 @@
 
 
 /* ==========================================================================
-   When document is Scrollig, do
+   When document is Scrolling, do
    ========================================================================== */
 
 	$(window).on('scroll', function() {
@@ -577,8 +577,11 @@
    When document is loading, do
    ========================================================================== */
 
-	$(window).on('load', function() {
+   document.addEventListener("turbolinks:load", function() {
 		handlePreloader();
+   })
+
+	$(window).on('load', function() {
 		sortableMasonry();
 		isotopeBlock();
 		bannerSlider();

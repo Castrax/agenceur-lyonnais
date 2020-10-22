@@ -8545,3 +8545,23 @@ input[type=checkbox]:checked + label:before{
 .tooltip-inner ul {
   margin-bottom: 0;
 }
+
+/* Form confirmation message */
+
+.confirmation-green {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.confirmation-green p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.error-message-red {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.error-message-red p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

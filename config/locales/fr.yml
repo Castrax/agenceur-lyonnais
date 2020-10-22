@@ -2,6 +2,20 @@
 fr:
   hello: "Bonjour le monde"
   activerecord:
+    models:
+      contact: Contact
+    attributes:
+      contact:
+        status: "Le statut"
+        demand: "Le type de demande"
+        last_name: "Le nom de famille"
+        first_name: "Le prénom"
+        address: "L'adresse"
+        zip_code: "Le code postal"
+        city: "La ville"
+        tel: "Le téléphone"
+        email: "L'email"
+        checkbox_info: "Le consentement"
     errors:
       messages:
         record_invalid: 'La validation a échoué : %{errors}'

@@ -1,0 +1,8 @@
+<div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">Attention, vous avez mal renseigné le formulaire</h4>
+  <p>Veuillez vérifier les champs ci-dessous :</p>
+  <hr>
+  <% @contact.errors.full_messages.each do |msg| %>
+    <p class="mb-0"><%= msg %></p>
+  <% end %>
+</div>
