@@ -8565,3 +8565,12 @@ input[type=checkbox]:checked + label:before{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+.image-left {
+  height: 100%;
+}
+
+.img-left {
+  height: 100%;
+  object-fit: cover;
+}
