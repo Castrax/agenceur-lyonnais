@@ -37,7 +37,7 @@ gem 'cookies_eu'
 gem 'nokogiri', '~> 1.10.10'
 gem 'bigdecimal'
 gem 'libv8'
-gem 'therubyracer'
+gem 'mini_racer'
 gem 'turbolinks_render'
 gem 'dotenv-rails'
 

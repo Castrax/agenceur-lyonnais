@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: agenceur_lyonnais_production
-  username: agenceur_lyonnais
+  database: math9788_agenceurdb
+  username: math9788_math9788
   password: <%= ENV['AGENCEUR_LYONNAIS_DATABASE_PASSWORD'] %>
