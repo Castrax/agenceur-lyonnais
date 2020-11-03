@@ -19,11 +19,11 @@ default: &default
 
 development:
   <<: *default
-  database: agenceur_lyonnais_development
-  # database: math9788_agenceurdb
-  # host: localhost
-  # username: math9788_math9788
-  # password: <%= ENV['AGENCEUR_LYONNAIS_DATABASE_PASSWORD'] %>
+  # database: agenceur_lyonnais_development
+  database: math9788_agenceurdb
+  host: localhost
+  username: math9788_math9788
+  password: <%= ENV['AGENCEUR_LYONNAIS_DATABASE_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
