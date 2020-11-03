@@ -122,7 +122,7 @@ Rails.application.configure do
     :port                 => 465,
     :user_name            => ENV['EMAIL_USERNAME'],
     :password             => ENV['EMAIL_PASSWORD'],
-    :authentication       => "plain",
-    :enable_starttls_auto => true
+    :authentication       => :login,
+    :ssl                  => true
   }
 end
