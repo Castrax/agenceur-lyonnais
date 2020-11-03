@@ -27,5 +27,6 @@ iconRadiobuttons();
 import Cookies from 'js.cookie';
 window.Cookies = Cookies;
 import './gems.js.erb';
+import './google_analytics.js.erb';
 
 import "controllers"
