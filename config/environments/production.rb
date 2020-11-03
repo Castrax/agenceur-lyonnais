@@ -118,10 +118,10 @@ Rails.application.configure do
 
   ActionMailer::Base.smtp_settings = {
     :from => 'contact@lagenceur-lyonnais.fr',
-    :address              => "smtp.gmail.com",
-    :port                 => 587,
-    :user_name            => ENV['GMAIL_USERNAME'],
-    :password             => ENV['GMAIL_PASSWORD'],
+    :address              => "clim.o2switch.net",
+    :port                 => 465,
+    :user_name            => ENV['EMAIL_USERNAME'],
+    :password             => ENV['EMAIL_PASSWORD'],
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
