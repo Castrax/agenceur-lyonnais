@@ -28,8 +28,8 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/google_analytics' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <%= javascript_include_tag GoogleAnalytics::JS_URL, async: true %>
   </head>
 
   <body>
