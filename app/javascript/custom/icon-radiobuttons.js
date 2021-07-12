@@ -12,14 +12,14 @@ const iconRadiobuttons = () => {
     const livraisonSeule = "<strong>Livraison seule :</strong><br>Profitez de la prestation livraison seule au pied de l&#39;immeuble ou en étage sur votre palier, à vous de décider.";
     const mobilierExterieur = "<strong>Mobilier extérieur :</strong><br>Tables et chaises.";
     const packEtudiant = "<strong>Pack Étudiant :</strong><br>Ensemble du mobilier nécessaire adapté à la vie étudiante.";
-    const packStandard = "<strong>Pack standard :</strong><br>Ensemble du mobilier nécessaire à la location meublée, dans un style moderne qui conviendra au plus grand nombre.";
+    const packEssentiel = "<strong>Pack essentiel :</strong><br>Ensemble du mobilier nécessaire à la location meublée, dans un style moderne qui conviendra au plus grand nombre.";
     const packConfort = "<strong>Pack confort :</strong><br>Ensemble du mobilier nécessaire à la location meublée, dans un style moderne ainsi que tous les éléments de décoration qui sublimeront votre bien.";
     const packMesure = "<strong>Pack sur-mesure :</strong><br>Mise en relation avec notre décorateur(trice) d&#39;intérieur pour une prestation sur-mesure.";
     const realPhotos = "<strong>Réalisation de photos:</strong><br>Photos réalisées par notre photographe professionnel spécialisé dans l&#39;immobilier, pour donner à vos biens plus de visibilité sur les plateformes.";
     const value = radioButton.firstChild.value;
     let title = "";
-    if (value === "Pack standard"){
-      title = packStandard
+    if (value === "Pack essentiel"){
+      title = packEssentiel
     } else if (value === "Pack confort") {
       title = packConfort
     } else if (value === "Pack étudiant") {
